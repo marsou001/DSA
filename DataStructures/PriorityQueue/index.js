@@ -8,7 +8,7 @@ class PriorityQueue {
             this.collection.unshift(element);
         } else {
             let added = false;
-            for (let i = 0; i < this.collection.length; i++) {
+            for (let i = this.collection.length - 1; i >= 0; i--) {
                 if (element[1] < this.collection[i][1]) {
                     this.collection.splice(i + 1, 0, element);
                     added = true;
@@ -45,3 +45,16 @@ class PriorityQueue {
         return this.collection.length === 0;
     }
 }
+
+
+
+var pq = new PriorityQueue(); 
+debugger;
+pq.enqueue(['Beau Carnes', 2]); 
+debugger;
+pq.enqueue(['Quincy Larson', 3]);
+debugger;
+pq.enqueue(['Ewa Mitulska-Wójcik', 1])
+debugger;
+pq.enqueue(['Briana Swift', 2])
+debugger;
