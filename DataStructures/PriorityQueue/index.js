@@ -2,10 +2,6 @@ class PriorityQueue {
     constructor() {
         this.collection = [];
     }
-    
-    enqueue(element) {
-        this.collection.unshift(element);
-    }
 
     enqueue(element) {        
         if (this.collection.length === 0) {
