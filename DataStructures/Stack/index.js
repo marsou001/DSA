@@ -32,3 +32,5 @@ class Stack {
         return this.count;
     }
 }
+
+export default Stack;

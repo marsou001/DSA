@@ -8,7 +8,7 @@ class Queue {
     }
 
     dequeue() {
-        this.collection.pop();
+        return this.collection.pop();
     }
 
     front() {
@@ -31,3 +31,5 @@ class Queue {
         return this.collection.length === 0;
     }
 }
+
+export default Queue;
