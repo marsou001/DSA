@@ -1,5 +1,5 @@
 class MySet<T> {
-  collection: T[];
+  private collection: T[];
 
   constructor() {
     this.collection = [];

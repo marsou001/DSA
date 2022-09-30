@@ -1,7 +1,7 @@
 type QueueElement<T> = [T, number];
 
 class PriorityQueue<T> {
-  collection: QueueElement<T>[];
+  private collection: QueueElement<T>[];
 
   constructor() {
     this.collection = [];

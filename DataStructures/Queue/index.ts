@@ -1,5 +1,5 @@
 class Queue<T> {
-  collection: T[];
+  private collection: T[];
 
   constructor() {
     this.collection = [];

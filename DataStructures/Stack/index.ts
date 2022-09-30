@@ -1,6 +1,6 @@
 class Stack<T> {
-  count: number;
-  storage: Record<number, T>;
+  private count: number;
+  private storage: Record<number, T>;
 
   constructor() {
     this.count = 0;
